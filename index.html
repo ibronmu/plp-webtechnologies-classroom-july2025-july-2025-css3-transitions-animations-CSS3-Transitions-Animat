@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animation Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Animation Showcase</h1>
+            <p class="intro">Explore the power of CSS animations, JavaScript functions, and their seamless integration to create engaging web experiences.</p>
+        </header>
+        
+        <!-- Part 1: CSS Animations -->
+        <section class="section">
+            <h2>Part 1: CSS3 Transitions & Animations</h2>
+            <p>Hover over or click the elements below to see CSS animations in action.</p>
+            
+            <div class="animation-demo">
+                <div class="demo-box bounce">Bounce</div>
+                <div class="demo-box pulse">Pulse</div>
+                <div class="demo-box rotate">Rotate</div>
+                <div class="demo-box slide-in">Slide In</div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="animated-btn">Hover Me</button>
+                <button class="animated-btn">Another Button</button>
+            </div>
+        </section>
+        
+        <!-- Part 2: JavaScript Functions -->
+        <section class="section">
+            <h2>Part 2: JavaScript Functions</h2>
+            <p>These examples demonstrate JavaScript functions with parameters, return values, and scope.</p>
+            
+            <div class="js-demo">
+                <div class="input-group">
+                    <label for="num1">Enter first number:</label>
+                    <input type="number" id="num1" value="5">
+                </div>
+                
+                <div class="input-group">
+                    <label for="num2">Enter second number:</label>
+                    <input type="number" id="num2" value="3">
+                </div>
+                
+                <div class="input-group">
+                    <button class="animated-btn" onclick="calculateSum()">Calculate Sum</button>
+                    <button class="animated-btn" onclick="calculateProduct()">Calculate Product</button>
+                    <button class="animated-btn" onclick="findLarger()">Find Larger Number</button>
+                </div>
+                
+                <div class="result-box" id="result">
+                    Results will appear here...
+                </div>
+            </div>
+        </section>
+        
+        <!-- Part 3: Combined CSS & JavaScript -->
+        <section class="section">
+            <h2>Part 3: CSS Animations + JavaScript</h2>
+            <p>JavaScript is used to trigger CSS animations dynamically.</p>
+            
+            <div class="combined-demo">
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Front</h3>
+                            <p>Click to flip</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Back</h3>
+                            <p>JavaScript triggered this flip!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Card 2</h3>
+                            <p>Click me too!</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Magic!</h3>
+                            <p>Another flipped card</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="animated-btn" onclick="openModal()">Open Modal</button>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h2>Dynamic Modal</h2>
+            <p>This modal was triggered by JavaScript and animated with CSS!</p>
+            <p>You can close it by clicking the X or outside the modal.</p>
+        </div>
+    </div>
+
+    <script src="script.js">
+   
+    </script>
+</body>
+</html>
